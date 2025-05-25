@@ -10,7 +10,7 @@ interface AwardCardProps {
 const AwardCard: React.FC<AwardCardProps> = ({ award }) => {
   return (
     <motion.div
-      className="card overflow-hidden"
+      className="bg-slate-200 text-black rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300;"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

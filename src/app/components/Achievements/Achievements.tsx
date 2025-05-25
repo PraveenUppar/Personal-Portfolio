@@ -7,7 +7,7 @@ import AwardCard from "./Award";
 
 const AchievementsSection: React.FC = () => {
   return (
-    <section id="education" className="section-padding bg-background">
+    <section id="achievements" className="py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
