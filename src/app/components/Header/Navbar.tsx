@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <motion.header
       className={`fixed top-0 left-10 right-10 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-card shadow-md py-3 " : "bg-transparent py-5 "
+        isScrolled ? "py-3 " : "bg-transparent py-5 "
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}

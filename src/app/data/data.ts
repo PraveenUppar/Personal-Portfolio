@@ -114,6 +114,9 @@ export const awards: Award[] = [
 
 export const skills: Skill[] = [
   // Frontend
+  { name: "HTML", level: 90, category: "frontend" },
+  { name: "CSS", level: 85, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
   { name: "React", level: 90, category: "frontend" },
   { name: "Next.js", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },

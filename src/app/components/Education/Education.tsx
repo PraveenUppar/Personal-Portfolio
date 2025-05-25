@@ -18,7 +18,7 @@ const EducationSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
-            Education & Certification
+            Education
           </h2>
           {/* <p className="section-subtitle text-white">
             My academic journey, professional certifications, and notable
@@ -28,9 +28,9 @@ const EducationSection: React.FC = () => {
 
         {/* Education Timeline */}
         <div className="mb-16">
-          <h3 className="text-3xl font-heading text-center font-bold mb-8 text-white">
-            My Educational Journey
-          </h3>
+          {/* <h3 className="text-3xl font-heading text-center font-bold mb-8 text-white">
+            Educational Journey
+          </h3> */}
           <VerticalTimeline lineColor="#fafafa">
             {education.map((item) => (
               <TimelineItem
@@ -59,9 +59,9 @@ const EducationSection: React.FC = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h3 className="text-3xl font-heading font-bold mb-8 text-center text-white">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
             Certifications
-          </h3>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert) => (
               <CertificationCard key={cert.id} certification={cert} />
