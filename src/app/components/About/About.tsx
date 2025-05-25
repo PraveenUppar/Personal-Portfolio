@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { personalInfo } from "../../data/data";
 import profilePic from "../../../../public/me.png";
 
@@ -71,6 +71,16 @@ function About() {
               >
                 {personalInfo.about}
               </motion.p>
+              <motion.p
+                className="text-lg mb-8 max-w-2xl"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.8 }}
+              >
+                Location: Banglore, India
+                <br></br>
+                Email: praveenuppar718@gmail.com
+              </motion.p>
 
               {/* Social Icons */}
               <motion.div
@@ -105,6 +115,15 @@ function About() {
                   whileHover={{ y: -5, scale: 1.1 }}
                 >
                   <Twitter size={24} />
+                </motion.a>
+                <motion.a
+                  href="praveenuppar718@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-highlight hover:text-white transition-colors"
+                  whileHover={{ y: -5, scale: 1.1 }}
+                >
+                  <Mail size={24} />
                 </motion.a>
               </motion.div>
             </motion.div>

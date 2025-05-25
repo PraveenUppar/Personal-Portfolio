@@ -15,7 +15,7 @@ export const personalInfo = {
   email: "praveenuppar718@gmail.com",
   location: "India",
   about:
-    "Passionate full-stack developer with expertise in modern web technologies and cloud solutions. Currently studying at VIT and pursuing opportunities in tech innovation.",
+    "A Passionate full-stack developer with modern web technologies and cloud solutions.",
   avatar: profile,
 };
 
@@ -40,48 +40,52 @@ export const socialLinks: SocialLink[] = [
 export const education: Education[] = [
   {
     id: "VIT",
-    institution: "VIT - Vellore Institute of Technology",
+    institution: "Vellore Institute of Technology",
     degree: "Bachelor of Technology in Computer Science",
     date: "2023 - 2027",
     description:
-      "Specializing in Cloud Computing. Core coursework includes Data Structures, Algorithms, Database Management, Operating System, Artifical Intelligence, Machine Learning, System Design, Web Development, and Cloud Computing.",
+      "Specializing in Cloud Computing. Core coursework includes Data Structures, Algorithms, Networking, Database Management, Operating System, Artifical Intelligence, Machine Learning, System Design, Web Development, and Cloud Computing.",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png",
   },
+  
 ];
 
 export const certifications: Certification[] = [
   {
-    id: "azure",
+    id: "Microsoft Azure Fundamentals",
     title: "Microsoft Azure Fundamentals",
     issuer: "Microsoft",
-    date: "2023",
+    date: "Oct 2024",
     credentialId: "46371961",
     logo: "https://images.credly.com/size/340x340/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png",
-    link: "https://learn.microsoft.com/credentials/",
+    link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
   {
-    id: "python-bootcamp",
+    id: "Complete Python Bootcamp",
     title: "Complete Python Bootcamp",
     issuer: "Udemy",
-    date: "2022",
-    credentialId: "UC-PYTHON-123",
+    date: "Sep 2024",
+    credentialId: "UC-bb7d95e8-de36-48ac-aa00-68275860a802",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
+    link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
   {
-    id: "web-dev-bootcamp",
+    id: "Web Development Bootcamp",
     title: "Web Development Bootcamp",
     issuer: "Udemy",
-    date: "2022",
-    credentialId: "UC-WEBDEV-456",
+    date: "Feb 2024",
+    credentialId: "UC-954bb611-e956-4c82-8442-09ce9f8bc4f9",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
+    link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
   {
-    id: "aiml-python",
-    title: "AI/ML & Python Essentials",
+    id: "AI/ML and Python Essentials",
+    title: "AI/ML and Python Essentials",
     issuer: "VIT",
-    date: "2022",
-    credentialId: "VIT-AIML-789",
+    date: "May 2024",
+    credentialId: "100618484274170935",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png",
+    link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
 ];
 

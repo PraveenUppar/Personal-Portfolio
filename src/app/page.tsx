@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import EducationPage from "./components/Education/Page";
 import Navbar from "./components/Header/Navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Navbar></Navbar>
       <About></About>
+      <EducationPage></EducationPage>
     </div>
   );
 }

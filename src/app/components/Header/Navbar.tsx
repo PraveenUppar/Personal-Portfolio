@@ -24,9 +24,7 @@ function Navbar() {
   return (
     <motion.header
       className={`fixed top-0 left-10 right-10 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-card shadow-md py-3 "
-          : "bg-transparent py-5 "
+        isScrolled ? "bg-card shadow-md py-3 " : "bg-transparent py-5 "
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -34,10 +32,10 @@ function Navbar() {
     >
       <div className="container-custom flex justify-between items-center">
         <a href="#hero" className="text-2xl font-heading font-bold text-white">
-          Portfolio
+          PaviCodes..
         </a>
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
+        <nav className="hidden md:block text-lg">
           <ul className="flex space-x-8">
             {[
               "About",
