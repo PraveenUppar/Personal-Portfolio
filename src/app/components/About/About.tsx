@@ -9,7 +9,7 @@ function About() {
   return (
     <div>
       <section
-        id="hero"
+        id="about"
         className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
       >
         <div className="container-custom z-10">

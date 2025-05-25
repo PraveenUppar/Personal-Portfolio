@@ -47,7 +47,6 @@ export const education: Education[] = [
       "Specializing in Cloud Computing. Core coursework includes Data Structures, Algorithms, Networking, Database Management, Operating System, Artifical Intelligence, Machine Learning, System Design, Web Development, and Cloud Computing.",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png",
   },
-  
 ];
 
 export const certifications: Certification[] = [
@@ -211,23 +210,21 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
   {
-    id: "exp1",
-    title: "Hostel Committee Member",
-    organization: "VIT",
-    date: "Mar 2024 - Aug 2024",
+    id: "VITBMUN1",
+    institution: "VITBMUN",
+    degree: "Technical Team Lead",
+    date: "2024 - 2025",
     description:
-      "Led initiatives to improve hostel facilities and organized community events. Implemented a digital system for maintenance requests that reduced response time by 50%.",
-    image:
-      "https://images.pexels.com/photos/260399/pexels-photo-260399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "As the Technical Team Lead at VITB MUN, I am currently leading the redesign and rebuild of the entire website to make it more user-friendly, functional, and visually appealing for event participants. It's been an exciting challenge to collaborate with the team, implement new features, and ensure that the website meets the evolving needs of the event. My goal is to create a seamless and interactive online experience that enhances the overall MUN event for everyone involved",
+    logo: "https://vitbmun.vercel.app/assets/vitbmun_logo-CUZneKO5.svg",
   },
   {
-    id: "exp2",
-    title: "Open Source Contributor",
-    organization: "Various Projects",
-    date: "2022 - Present",
+    id: "VITBMUN2",
+    institution: "VITBMUN",
+    degree: "Teachnical Team Member",
+    date: "Mar 2024 - Nov 2024",
     description:
-      "Active contributor to several open-source projects, focusing on web technologies and developer tools. Contributed to documentation, bug fixes, and feature implementations.",
-    image:
-      "https://images.pexels.com/photos/4064432/pexels-photo-4064432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "As a Technical Team Member at VITB MUN, I took charge of keeping the official website up-to-date and running smoothly for all event. Beyond that, I had the opportunity to lead the development of a Virtual Reality (VR) feature, which added a whole new level of interaction and engagement to the event.",
+    logo: "https://vitbmun.vercel.app/assets/vitbmun_logo-CUZneKO5.svg",
   },
 ];

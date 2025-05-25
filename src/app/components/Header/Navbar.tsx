@@ -43,6 +43,7 @@ function Navbar() {
               "Skills",
               "Projects",
               "Experience",
+              "Achievements",
               "Contact",
             ].map((item) => (
               <li key={item}>
@@ -83,6 +84,7 @@ function Navbar() {
               "Skills",
               "Projects",
               "Experience",
+              "Achievements",
               "Contact",
             ].map((item) => (
               <li key={item}>

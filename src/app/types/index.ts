@@ -47,11 +47,11 @@ export interface Project {
 
 export interface Experience {
   id: string;
-  title: string;
-  organization: string;
+  institution: string;
+  degree: string;
   date: string;
   description: string;
-  image?: string;
+  logo: string;
 }
 
 export interface SocialLink {
