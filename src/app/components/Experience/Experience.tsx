@@ -8,7 +8,7 @@ import TimelineItem from "./Timeline";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <section id="experience" className=" bg-background">
+    <section id="experience" className=" ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

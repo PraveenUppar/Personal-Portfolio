@@ -32,7 +32,7 @@ function Navbar() {
     >
       <div className="container-custom flex justify-between items-center">
         <a href="#hero" className="text-2xl font-heading font-bold text-white">
-          PaviCodes..
+          Dev Portfolio
         </a>
         {/* Desktop Navigation */}
         <nav className="hidden md:block text-lg">

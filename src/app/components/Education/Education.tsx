@@ -9,7 +9,7 @@ import CertificationCard from "./Certificate";
 
 const EducationSection: React.FC = () => {
   return (
-    <section id="education" className="section-padding bg-background">
+    <section id="education" className="">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

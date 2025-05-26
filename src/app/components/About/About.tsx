@@ -4,8 +4,17 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { personalInfo } from "../../data/data";
 import profilePic from "../../../../public/me.png";
+import { Cover } from "../ui/cover";
+import { FlipWords } from "../ui/flip-words";
 
 function About() {
+  const words = [
+    "Full Stack Developer.",
+    "Open Source Contributor.",
+    "Cloud Enthusiast.",
+    "College Grad.",
+  ];
+  
   return (
     <div>
       <section
@@ -25,7 +34,7 @@ function About() {
                 <motion.img
                   src={profilePic.src}
                   alt="Profile Picture"
-                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-accent"
+                  className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover  border-accent"
                   animate={{
                     objectPosition: [
                       "center top",
@@ -51,20 +60,22 @@ function About() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Hi, I'm <span className="text-white ">{personalInfo.name}</span>
+                Hi, I'm{" "}
+                <span className="text-8xl text-white tracking-tighter text-balance">
+                  <Cover>{personalInfo.name}</Cover>
+                </span>
               </motion.h1>
-
               <motion.h2
-                className="text-2xl md:text-3xl text-highlight mb-6"
+                className="text-4xl  mb-8 max-w-2xl text-white tracking-tighter text-balance"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
               >
-                {personalInfo.title}
+                A 19 year old<FlipWords words={words}></FlipWords>
               </motion.h2>
 
               <motion.p
-                className="text-lg mb-8 max-w-2xl"
+                className="text-3xl  mb-8 max-w-2xl text-white tracking-tighter text-balance "
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 0.8 }}

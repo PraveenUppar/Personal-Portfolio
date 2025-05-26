@@ -10,12 +10,12 @@ import {
 import profile from "../../../public/me.png";
 
 export const personalInfo = {
-  name: "Praveen Uppar.",
-  title: "Full-Stack Developer & Cloud Engineer",
+  name: "Praveen Uppar",
+  title: "Full-Stack Developer",
   email: "praveenuppar718@gmail.com",
   location: "India",
   about:
-    "A Passionate full-stack developer with modern web technologies and cloud solutions.",
+    "I am a Passionate developer who is high on caffinee likes to build and break stuff that can channge the world.",
   avatar: profile,
 };
 
