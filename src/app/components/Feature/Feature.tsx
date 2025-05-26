@@ -16,35 +16,35 @@ export function FeaturesSectionDemo() {
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "col-span-2 lg:col-span-3 border-b lg:border-r dark:border-neutral-800",
     },
-    {
-      title: "Capture pictures with AI",
-      description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
-      skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
-    },
-    {
-      title: "Watch our AI on YouTube",
-      description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
-      skeleton: <SkeletonThree />,
-      className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
-    },
+    // {
+    //   title: "Capture pictures with AI",
+    //   description:
+    //     "Capture stunning photos effortlessly using our advanced AI technology.",
+    //   skeleton: <SkeletonTwo />,
+    //   className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+    // },
+    // {
+    //   title: "Watch our AI on YouTube",
+    //   description:
+    //     "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+    //   skeleton: <SkeletonThree />,
+    //   className:
+    //     "col-span-2 lg:col-span-3 lg:border-r  dark:border-neutral-800",
+    // },
     {
       title: "Deploy in seconds",
       description:
         "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+      className: "col-span-2 lg:col-span-3 border-b lg:border-none",
     },
   ];
   return (
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center -mt-28 tracking-tight font-medium text-black dark:text-white">
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center -mt-2 tracking-tight font-medium text-black dark:text-white">
           Packed with thousands of features
         </h4>
 

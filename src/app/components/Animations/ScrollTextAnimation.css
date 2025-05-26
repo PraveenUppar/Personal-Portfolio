@@ -1,0 +1,33 @@
+
+  body {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .spancediv {
+    height: 300px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+  .spancediv2 {
+    background-color: #50915e;
+  }
+  .spancediv3 {
+    background-color: #485c8b;
+  }
+  .spancediv4 {
+    background-color: #e15858;
+  }
+  .big-title {
+    font-size: 150px;
+    position: relative;
+    left: 10px;
+    white-space: nowrap;
+    right: 81vw;
+  }
+
