@@ -73,7 +73,6 @@ function About() {
               >
                 A 19 year old<FlipWords words={words}></FlipWords>
               </motion.h2>
-
               <motion.p
                 className="text-3xl  mb-8 max-w-2xl text-white tracking-tighter text-balance "
                 initial={{ opacity: 0, y: 20 }}

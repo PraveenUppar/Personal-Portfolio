@@ -7,7 +7,10 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import ProjectsSection from "./components/Projects/ProjectSection";
 import SkillsSection from "./components/Skills/SkillsSection";
-import { cn } from "../app/lib/utlis" 
+import { InfiniteMovingCardsDemo } from "./components/Comments/Comments";
+import { FeaturesSectionDemo } from "./components/Feature/Feature";
+import { Block } from "./components/Feature/Blocks";
+import {HeroParallaxDemo} from "./components/About/Parallax"
 
 
 export default function Home() {
@@ -20,9 +23,13 @@ export default function Home() {
           <About />
           <EducationPage />
           <SkillsSection />
+          <Block />
+          <HeroParallaxDemo />
           <ProjectsSection />
+          <FeaturesSectionDemo />
           <ExperienceSection />
           <AchievementsSection />
+          <InfiniteMovingCardsDemo />
         </main>
         <Footer />
       </div>
