@@ -6,7 +6,7 @@ const MarqueeScroll: React.FC = () => {
     <div>
       <section className="a-section">
         <div className="a-section-marquee-box mt-12">
-          <h2 className="marquee-text">
+          <h2 className="marquee-text font-sans font-light ">
             • Full Stack • Frontend • Backend • DevOps • Full Stack • Frontend •
             Backend • DevOps • Full Stack • Frontend • Backend • DevOps • Full
             Stack • Frontend • Backend • DevOps • Full Stack • Frontend •
@@ -33,7 +33,6 @@ const MarqueeScroll: React.FC = () => {
           white-space: nowrap;
           text-transform: uppercase;
           font-size: 4.5em;
-          font-weight: 100;
           flex-shrink: 0;
           padding: 0 10px;
           width: max-content;
@@ -51,7 +50,7 @@ const MarqueeScroll: React.FC = () => {
             transform: translate3d(-80%, 0, 0);
           }
           100% {
-            transform: translate3d(0%, 0, 0);
+            transform: translate3d(-10%, 0, 0);
           }
         }
         }

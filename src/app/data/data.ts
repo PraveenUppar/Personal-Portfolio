@@ -15,7 +15,7 @@ export const personalInfo = {
   // email: "praveenuppar718@gmail.com",
   // location: "India",
   about:
-    "A Passionate developer who is high on caffeine likes to build and break stuff and believes great ideas and a lot of code can change the world.",
+    "Passionate developer who is high on caffeine likes to build and break stuff and believes great ideas and a lot of code can change the world.",
   avatar: profile,
 };
 
