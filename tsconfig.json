@@ -22,7 +22,7 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Animations/ScrollTextAnimation.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Animations/ScrollTextAnimation.jsx", "src/app/components/Animations/MarqueeScroll.tsx"],
   "exclude": ["node_modules"]
 }
 

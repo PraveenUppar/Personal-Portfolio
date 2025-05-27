@@ -11,11 +11,11 @@ import profile from "../../../public/me.png";
 
 export const personalInfo = {
   name: "Praveen Uppar",
-  title: "Full-Stack Developer",
-  email: "praveenuppar718@gmail.com",
-  location: "India",
+  // title: "Full-Stack Developer",
+  // email: "praveenuppar718@gmail.com",
+  // location: "India",
   about:
-    "I am a Passionate developer who is high on caffinee likes to build and break stuff that can channge the world.",
+    "A Passionate developer who is high on caffeine likes to build and break stuff and believes great ideas and a lot of code can change the world.",
   avatar: profile,
 };
 
