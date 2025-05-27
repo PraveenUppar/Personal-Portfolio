@@ -24,18 +24,18 @@ function Navbar() {
   return (
     <motion.header
       className={`fixed top-0 left-10 right-10 z-50 transition-all duration-300 ${
-        isScrolled ? "py-3 " : "bg-transparent py-5 "
+        isScrolled ? "py-3 bg-card/80 backdrop-blur-sm" : "bg-transparent py-5 "
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container-custom flex justify-between items-center">
-        <a href="#hero" className="text-2xl font-heading font-bold text-white">
-          Dev Portfolio
-        </a>
+      <div className="container-custom flex justify-center items-center">
+        {/* <a href="#about" className="text-2xl font-mono text-white">
+          Dev_Portfolio
+        </a> */}
         {/* Desktop Navigation */}
-        <nav className="hidden md:block text-lg">
+        <nav className="hidden font-mono md:block text-xl">
           <ul className="flex space-x-8">
             {[
               "About",
@@ -48,7 +48,17 @@ function Navbar() {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase()}`}
-                  className="font-heading font-medium hover:text-white transition-colors"
+                  className="font-heading font-medium hover:text-white transition-colors
+                     focus:outline-none focus:ring-2 focus:ring-white px-3 py-2 rounded"
+                  onClick={(e) => {
+                    // Smooth scroll behavior
+                    e.preventDefault();
+                    document
+                      .getElementById(item.toLowerCase())
+                      ?.scrollIntoView({
+                        behavior: "smooth",
+                      });
+                  }}
                 >
                   {item}
                 </a>
