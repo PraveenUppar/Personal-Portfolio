@@ -15,7 +15,7 @@ const AchievementsSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
+          <h2 className="text-6xl md:text-6xl lg:text-8xl font-light font-sans mb-8 md:mb-12 text-left">
             Achievements
           </h2>
           {/* <p className="section-subtitle text-white">

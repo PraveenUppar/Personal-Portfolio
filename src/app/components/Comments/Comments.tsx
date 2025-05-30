@@ -6,48 +6,38 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 export function InfiniteMovingCardsDemo() {
   return (
     <div>
-          <h1 className="text-center text-6xl">Random Facts</h1>;
-      <div className="rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+      <h1 className="text-center font-sans font-light text-8xl">
+        Know me Better
+      </h1>
+      ;
+      <div className="rounded-md flex flex-col antialiased text-xl text-neutral-500 font-light font-sans items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="normal"
         />
       </div>
     </div>
   );
 }
 
-
-
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "I used to be a chai lover, but after discovering coffee, I became a coffee enthusiast. The aroma, the taste, and the energy boost - it's all perfect. Coffee has become my daily ritual, and I can't imagine starting my day without it.",
+  },
+  {
+    quote: "I love going to the gym and reading books about finance.",
+  },
+  {
+    quote: "I love dogs and traveling the world to explore new cultures.",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "I love to cook and experiment with new recipes. There's something so satisfying about creating a delicious meal from scratch.",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "I love football and swimming; they are my favorite sports. The thrill of the game, the teamwork, and the competition make them so exciting. I enjoy playing with friends and watching matches on TV.",
   },
 ];

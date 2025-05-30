@@ -96,38 +96,26 @@ export const awards: Award[] = [
     date: "2023",
     description:
       "Developed an innovative solution for Wikimedia challenges as part of Team CodeJS, securing the runner-up position among 50+ teams.",
-    image:
-      "https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "/hackbyte.jpg",
   },
+
   {
-    id: "hostel-committee",
-    title: "Hostel Committee Member",
+    id: "solvit",
+    title: "SolVIT 2024",
     organization: "VIT",
-    date: "Mar 2024 - Aug 2024",
-    description:
-      "Selected to serve on the hostel committee, responsible for addressing student concerns, organizing events, and improving hostel facilities.",
-    image:
-      "https://images.pexels.com/photos/260399/pexels-photo-260399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-  {
-    id: "hackbyte2",
-    title: "HackByte 3.0 Runner-Up (Wikimedia Track)",
-    organization: "HackByte",
     date: "2023",
     description:
-      "Developed an innovative solution for Wikimedia challenges as part of Team CodeJS, securing the runner-up position among 50+ teams.",
-    image:
-      "https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "Developed an innovative solution Improving Customer Experience & Engagement with a B2B SaaS platform aimed at helping businesses enhance customer satisfaction.",
+    image: "/solvit.heic",
   },
   {
-    id: "hostel-committee2",
-    title: "Hostel Committee Member",
-    organization: "VIT",
-    date: "Mar 2024 - Aug 2024",
+    id: "ieee",
+    title: "IEEE Hackathon",
+    organization: "VIT IEEE",
+    date: "2024",
     description:
-      "Selected to serve on the hostel committee, responsible for addressing student concerns, organizing events, and improving hostel facilities.",
-    image:
-      "https://images.pexels.com/photos/260399/pexels-photo-260399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "A comprehensive web application designed to enhance student life. It provides a one-stop platform for various student needs.",
+    image: "ieee.png",
   },
 ];
 
