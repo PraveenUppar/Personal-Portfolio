@@ -11,7 +11,7 @@ import { InfiniteMovingCardsDemo } from "./components/Comments/Comments";
 // import { FeaturesSectionDemo } from "./components/Feature/Feature";
 // import { Block } from "./components/Feature/Blocks";
 // import { HeroParallaxDemo } from "./components/About/Parallax"
-import {TimelineDemo} from "./components/Timeline/Timeline";
+// import {TimelineDemo} from "./components/Timeline/Timeline";
 // import Srcoll from "./components/Animations/ScrollTextAnimation.jsx";
 
 
@@ -29,8 +29,8 @@ export default function Home() {
           <SkillsSection />
           {/* <HeroParallaxDemo /> */}
           <ProjectsSection />
-          <TimelineDemo />
           <ExperienceSection />
+          {/* <TimelineDemo /> */}
           <AchievementsSection />
           <InfiniteMovingCardsDemo />
         </main>

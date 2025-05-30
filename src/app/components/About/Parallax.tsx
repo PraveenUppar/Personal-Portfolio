@@ -7,46 +7,14 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Customer Grid",
-    link: "https://customer-grid.vercel.app/",
-    thumbnail: "/customer_grid.png",
+    title: "PMS",
+    link: "https://vitb-patient-management-system-project.vercel.app/",
+    thumbnail: "/pms.png",
   },
   {
     title: "Customer Grid",
     link: "https://customer-grid.vercel.app/",
     thumbnail: "/customer_grid.png",
-  },
-  {
-    title: "Customer Grid",
-    link: "https://customer-grid.vercel.app/",
-    thumbnail: "/customer_grid.png",
-  },
-
-  {
-    title: "Customer Grid",
-    link: "https://customer-grid.vercel.app/",
-    thumbnail: "/customer_grid.png",
-  },
-  {
-    title: "Remote Hire",
-    link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
-  },
-  {
-    title: "Remote Hire",
-    link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
-  },
-
-  {
-    title: "Remote Hire",
-    link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
-  },
-  {
-    title: "Remote Hire",
-    link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
   },
   {
     title: "Remote Hire",
@@ -59,20 +27,49 @@ export const products = [
     thumbnail: "/pms.png",
   },
   {
-    title: "PMS",
-    link: "https://vitb-patient-management-system-project.vercel.app/",
-    thumbnail: "/pms.png",
+    title: "Remote Hire",
+    link: "https://remote-hire-gamma.vercel.app/",
+    thumbnail: "./remote_hire.png",
   },
-
+  {
+    title: "Customer Grid",
+    link: "https://customer-grid.vercel.app/",
+    thumbnail: "/customer_grid.png",
+  },
+  {
+    title: "Remote Hire",
+    link: "https://remote-hire-gamma.vercel.app/",
+    thumbnail: "./remote_hire.png",
+  },
+  {
+    title: "Customer Grid",
+    link: "https://customer-grid.vercel.app/",
+    thumbnail: "/customer_grid.png",
+  },
   {
     title: "PMS",
     link: "https://vitb-patient-management-system-project.vercel.app/",
     thumbnail: "/pms.png",
   },
   {
+    title: "Remote Hire",
+    link: "https://remote-hire-gamma.vercel.app/",
+    thumbnail: "./remote_hire.png",
+  },
+  {
     title: "PMS",
     link: "https://vitb-patient-management-system-project.vercel.app/",
     thumbnail: "/pms.png",
+  },
+  {
+    title: "Customer Grid",
+    link: "https://customer-grid.vercel.app/",
+    thumbnail: "/customer_grid.png",
+  },
+  {
+    title: "Remote Hire",
+    link: "https://remote-hire-gamma.vercel.app/",
+    thumbnail: "./remote_hire.png",
   },
   {
     title: "PMS",
@@ -85,3 +82,4 @@ export const products = [
     thumbnail: "/pms.png",
   },
 ];
+
