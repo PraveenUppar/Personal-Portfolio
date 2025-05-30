@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { education, certifications } from "../../data/data";
 import TimelineItem from "./Timeline";
 import CertificationCard from "./Certificate";
-// import Image from "next/image";
+import Image from "next/image";
 import Srcoll from "../Animations/ScrollTextAnimation";
 
 const EducationSection: React.FC = () => {
@@ -38,7 +38,9 @@ const EducationSection: React.FC = () => {
                 subtitle={item.degree}
                 description={item.description}
                 icon={
-                  <img
+                  <Image
+                    width={50}
+                    height={50}
                     src={item.logo}
                     alt={item.institution}
                     className="w-full h-full rounded-full"

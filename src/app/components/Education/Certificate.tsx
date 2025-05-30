@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { Certification } from "../../types";
+import Image from "next/image";
 
 interface CertificationCardProps {
   certification: Certification;
@@ -16,7 +17,9 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
       whileHover={{ y: -10, scale: 1.02 }}
       transition={{ duration: 0.1 }}
     >
-      <img
+      <Image
+        width={100}
+        height={100}
         src={certification.logo}
         alt={certification.issuer}
         className="h-12 mb-4 object-contain"
