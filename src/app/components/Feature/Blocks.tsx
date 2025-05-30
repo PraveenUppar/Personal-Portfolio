@@ -13,54 +13,50 @@ import {
 export function Block() {
   const features = [
     {
-      title: "Built for developers",
-      description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
-    },
-    {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
-    },
-    {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
-    },
-    {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Full Stack Development",
+      description: "Building both front and backend smoothly.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Frontend Development",
+      description: "Crafting user interfaces with great skill.",
+      icon: <IconTerminal2 />,
+    },
+    {
+      title: "Backend Development",
+      description: "Managing data and logic behind the scenes.",
+      icon: <IconEaseInOut />,
+    },
+    {
+      title: "Database Management",
+      description: "Storing and organizing data efficiently.",
+      icon: <IconCurrencyDollar />,
+    },
+    {
+      title: "AWS Cloud Services",
+      description: "Providing scalable cloud solutions.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
-      description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+      title: "Open Source",
+      description: "Sharing code and tools openly.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
+      title: "DevOps",
+      description: "Connecting development and operations.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "AI/ML",
+      description: "Using smart model to make coding easier.",
       icon: <IconHeart />,
     },
   ];
+  
   return (
     <div>
-      <div className="text-center text-6xl">Tech Stack</div>
+      {/* <div className="text-center text-6xl">Tech Stack</div> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />

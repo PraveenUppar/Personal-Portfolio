@@ -38,33 +38,9 @@ const TextScroll = () => {
 
   return (
     <div>
-      <div className="spancediv">Move text on scroll :)</div>
-
       <section className="Frist" ref={addSectionRef}>
-        <h1 className="big-title">Text move left right</h1>
+        <h1 className="big-title font-sans font-light">Education/Certifications</h1>
       </section>
-
-      <div className="spancediv spancediv4">One More Time Scroll :)</div>
-      <section className="Frists" ref={addSectionRef}>
-        <h1 className="big-title">Our project</h1>
-      </section>
-
-      <div className="spancediv spancediv3">Scroll :)</div>
-      <section className="Fristss" ref={addSectionRef}>
-        <h1 className="big-title">Our project</h1>
-      </section>
-
-      <div className="spancediv spancediv2">Scroll :)</div>
-      <section className="Fristsss" ref={addSectionRef}>
-        <h1 className="big-title">Our project</h1>
-      </section>
-
-      <div className="spancediv spancediv4">Scroll :)</div>
-      <section className="Fristssss" ref={addSectionRef}>
-        <h1 className="big-title">Our project</h1>
-      </section>
-
-      <div className="spancediv spancediv3"></div>
 
       <style jsx global>{`
         body {
@@ -73,35 +49,15 @@ const TextScroll = () => {
           overflow-x: hidden;
         }
 
-        .spancediv {
-          height: 300px;
-          border-radius: 30px;
-          color: #fff;
-          font-size: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #000;
-        }
-
-        .spancediv2 {
-          background-color: #50915e;
-        }
-        .spancediv3 {
-          background-color: #485c8b;
-        }
-        .spancediv4 {
-          background-color: #e15858;
-        }
-
         .big-title {
-          font-size: 150px;
+          font-size: 120px;
           position: relative;
-          left: 10px;
+          left: -230px;
           white-space: nowrap;
           right: 81vw;
           margin: 0;
           will-change: transform;
+          transition: transform 0.1s ease-out;
         }
       `}</style>
     </div>

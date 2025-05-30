@@ -19,7 +19,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#f5f5f5 ",
+        background: "#d3d3d3",
         color: "black",
         borderRadius: "0.7rem",
       }}

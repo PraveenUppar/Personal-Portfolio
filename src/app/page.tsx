@@ -8,12 +8,11 @@ import Navbar from "./components/Header/Navbar";
 import ProjectsSection from "./components/Projects/ProjectSection";
 import SkillsSection from "./components/Skills/SkillsSection";
 import { InfiniteMovingCardsDemo } from "./components/Comments/Comments";
-import { FeaturesSectionDemo } from "./components/Feature/Feature";
-import { Block } from "./components/Feature/Blocks";
-import { HeroParallaxDemo } from "./components/About/Parallax"
+// import { FeaturesSectionDemo } from "./components/Feature/Feature";
+// import { Block } from "./components/Feature/Blocks";
+// import { HeroParallaxDemo } from "./components/About/Parallax"
 import {TimelineDemo} from "./components/Timeline/Timeline";
-import Srcoll from "./components/Animations/ScrollTextAnimation.jsx";
-import MarqueeScroll from "./components/Animations/MarqueeScroll";
+// import Srcoll from "./components/Animations/ScrollTextAnimation.jsx";
 
 
 export default function Home() {
@@ -24,14 +23,12 @@ export default function Home() {
         <Navbar />
         <main className="flex-grow">
           <About />
-          <Srcoll />
-          <MarqueeScroll />
+          {/* <Srcoll /> */}
           <EducationPage />
+          {/* <FeaturesSectionDemo /> */}
           <SkillsSection />
-          <Block />
-          <HeroParallaxDemo />
+          {/* <HeroParallaxDemo /> */}
           <ProjectsSection />
-          <FeaturesSectionDemo />
           <TimelineDemo />
           <ExperienceSection />
           <AchievementsSection />

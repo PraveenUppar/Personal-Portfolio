@@ -6,6 +6,9 @@ import "react-vertical-timeline-component/style.min.css";
 import { education, certifications} from "../../data/data";
 import TimelineItem from "./Timeline";
 import CertificationCard from "./Certificate";
+// import Image from "next/image";
+import Srcoll from "../Animations/ScrollTextAnimation";
+
 
 const EducationSection: React.FC = () => {
   return (
@@ -17,9 +20,10 @@ const EducationSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
+          {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
             Education
-          </h2>
+          </h2> */}
+          <Srcoll />
           {/* <p className="section-subtitle text-white">
             My academic journey, professional certifications, and notable
             recognitions. 
@@ -59,9 +63,9 @@ const EducationSection: React.FC = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
+          {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
             Certifications
-          </h2>
+          </h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert) => (
               <CertificationCard key={cert.id} certification={cert} />

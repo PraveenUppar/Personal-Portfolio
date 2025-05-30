@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Text, Billboard } from "@react-three/drei";
 import { Skill } from "../../types";
+import * as THREE from 'three';
 
 interface SkillsGalaxyProps {
   skills: Skill[];

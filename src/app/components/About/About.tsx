@@ -62,7 +62,7 @@ function About() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
               >
-                Hello👋, I'm{" "}
+                Hello👋, I am{" "}
                 <span className="text-8xl text-white tracking-tighter text-balance">
                   <Cover>{personalInfo.name}</Cover>
                 </span>

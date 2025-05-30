@@ -65,7 +65,7 @@ export const certifications: Certification[] = [
     issuer: "Udemy",
     date: "Sep 2024",
     credentialId: "UC-bb7d95e8-de36-48ac-aa00-68275860a802",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
+    logo: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
   {
@@ -74,7 +74,7 @@ export const certifications: Certification[] = [
     issuer: "Udemy",
     date: "Feb 2024",
     credentialId: "UC-954bb611-e956-4c82-8442-09ce9f8bc4f9",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
+    logo: "https://logowik.com/content/uploads/images/udemy-new-20212512.jpg",
     link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
   {
@@ -83,7 +83,7 @@ export const certifications: Certification[] = [
     issuer: "VIT",
     date: "May 2024",
     credentialId: "100618484274170935",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png",
+    logo: "https://vitbhopal.ac.in/wp-content/uploads/2019/12/logo-300x151.png",
     link: " https://www.linkedin.com/in/praveen-uppar-5b0565277/details/certifications/",
   },
 ];

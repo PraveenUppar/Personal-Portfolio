@@ -12,7 +12,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
 }) => {
   return (
     <motion.div
-      className="bg-slate-100 text-black rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 p-6"
+      className="bg-neutral-800 text-neutral-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 p-6"
       whileHover={{ y: -10, scale: 1.02 }}
       transition={{ duration: 0.1 }}
     >
@@ -25,22 +25,17 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
       <h4 className="text-2xl font-sans font-semibold mb-2">
         {certification.title}
       </h4>
-      <p className="text-md  mb-2">
+      <p className="text-md text-neutral-400 mb-2">
         {certification.issuer} • {certification.date}
       </p>
-      
-      <div className="mt-4 pt-4 border-t border-accent">
-        {/* <p className="text-xs mb-2">
-          <span className="text-highlight font-medium">Credential ID:</span>{" "}
-          {certification.credentialId}
-        </p> */}
 
+      <div className="mt-4 pt-4 border-t border-neutral-700">
         {certification.link && (
           <a
             href={certification.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-sm text-highlight hover:text-white transition-colors"
+            className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
           >
             View Certificate <ExternalLink size={14} className="ml-1" />
           </a>
