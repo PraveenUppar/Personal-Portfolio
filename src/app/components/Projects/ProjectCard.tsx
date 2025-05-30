@@ -1,31 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   ExternalLink,
   Github,
-  ChevronDown,
-  ChevronUp,
-  BarChart2,
+
 } from "lucide-react";
 import { Project } from "../../types";
+import Image from "next/image";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const [showDetails, setShowDetails] = useState(false);
-  const [showMetrics, setShowMetrics] = useState(false);
 
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-    if (showMetrics) setShowMetrics(false);
-  };
-
-  const toggleMetrics = () => {
-    setShowMetrics(!showMetrics);
-    if (showDetails) setShowDetails(false);
-  };
 
   return (
     <motion.div
@@ -37,7 +25,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       transition={{ duration: 0.3 }}
     >
       <div className="relative h-48 overflow-hidden">
-        <img
+        <Image
+          width={500}
+          height={500}
           src={project.image}
           alt={project.title}
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"

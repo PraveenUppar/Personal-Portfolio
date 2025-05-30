@@ -1,8 +1,6 @@
 "use client"
 
 import React from "react";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import { motion } from "framer-motion";
 import { personalInfo } from "../../data/data";
 
 const Footer: React.FC = () => {
