@@ -1,9 +1,5 @@
 "use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -32,14 +28,19 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full md:px-10"
-      ref={containerRef}
-    >
+    <div className="w-full md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-6xl md:text-4xl lg:text-9xl -mt-24 font-sans font-light max-w-4xl">
-          Experience
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex-1 text-center md:text-left"
+        >
+          <h2 className="text-6xl md:text-4xl lg:text-9xl -mt-24 font-sans font-light max-w-4xl">
+            Experience
+          </h2>
+        </motion.div>
         {/* <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
           My 2 years of coding journey.
         </p> */}
