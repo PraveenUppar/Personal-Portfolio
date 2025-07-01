@@ -11,24 +11,14 @@ import Srcoll from "../Animations/ScrollTextAnimation";
 
 const EducationSection: React.FC = () => {
   return (
-    <section id="education" className="">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <section id="education" className="px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-7xl">
         <div>
-          {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
-            Education
-          </h2> */}
           <Srcoll />
-          {/* <p className="section-subtitle text-white">
-            My academic journey, professional certifications, and notable
-            recognitions. 
-          </p> */}
         </div>
 
         {/* Education Timeline */}
-        <div className="mb-16">
-          {/* <h3 className="text-3xl font-heading text-center font-bold mb-8 text-white">
-            Educational Journey
-          </h3> */}
+        <div className="mb-12 lg:mb-16">
           <VerticalTimeline lineColor="#fafafa">
             {education.map((item) => (
               <TimelineItem
@@ -57,12 +47,9 @@ const EducationSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12 lg:mb-16"
         >
-          {/* <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-12 text-center">
-            Certifications
-          </h2> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {certifications.map((cert) => (
               <CertificationCard key={cert.id} certification={cert} />
             ))}

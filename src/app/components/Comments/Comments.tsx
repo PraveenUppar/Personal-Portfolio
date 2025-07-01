@@ -5,12 +5,11 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div>
-      <h1 className="text-center font-sans font-light text-8xl">
+    <div className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24">
+      <h1 className="text-center font-sans font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8 lg:mb-12">
         Know me Better
       </h1>
-      ;
-      <div className="rounded-md flex flex-col antialiased text-xl text-neutral-500 font-light font-sans items-center justify-center relative overflow-hidden">
+      <div className="rounded-md flex flex-col antialiased text-base sm:text-lg lg:text-xl text-neutral-500 font-light font-sans items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"

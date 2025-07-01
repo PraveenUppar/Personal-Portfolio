@@ -50,14 +50,35 @@ const TextScroll = () => {
         }
 
         .big-title {
-          font-size: 120px;
+          font-size: 60px;
           position: relative;
-          left: -230px;
+          left: -120px;
           white-space: nowrap;
           right: 81vw;
           margin: 0;
           will-change: transform;
           transition: transform 0.1s ease-out;
+        }
+
+        @media (min-width: 640px) {
+          .big-title {
+            font-size: 80px;
+            left: -160px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .big-title {
+            font-size: 100px;
+            left: -200px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .big-title {
+            font-size: 120px;
+            left: -230px;
+          }
         }
       `}</style>
     </div>
