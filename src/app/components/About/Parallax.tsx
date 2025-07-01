@@ -19,7 +19,7 @@ export const products = [
   {
     title: "Remote Hire1",
     link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
+    thumbnail: "/remote_hire.png",
   },
   {
     title: "PMS2",
@@ -29,7 +29,7 @@ export const products = [
   {
     title: "Remote Hire2",
     link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
+    thumbnail: "/remote_hire.png",
   },
   {
     title: "Customer Grid2",
@@ -39,7 +39,7 @@ export const products = [
   {
     title: "Remote Hire3",
     link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
+    thumbnail: "/remote_hire.png",
   },
   {
     title: "Customer Grid3",
@@ -54,7 +54,7 @@ export const products = [
   {
     title: "Remote Hire4",
     link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
+    thumbnail: "/remote_hire.png",
   },
   {
     title: "PMS4",
@@ -69,7 +69,7 @@ export const products = [
   {
     title: "Remote Hire5",
     link: "https://remote-hire-gamma.vercel.app/",
-    thumbnail: "./remote_hire.png",
+    thumbnail: "/remote_hire.png",
   },
   {
     title: "PMS5",
@@ -82,4 +82,3 @@ export const products = [
     thumbnail: "/pms.png",
   },
 ];
-
