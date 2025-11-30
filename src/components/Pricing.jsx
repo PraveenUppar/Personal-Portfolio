@@ -2,6 +2,7 @@ import Section from "./Section";
 import { smallSphere, stars } from "../assets";
 import Heading from "./Heading";
 import PricingList from "./PricingList";
+import PricingList3 from "./PricingList3";
 import { LeftLine, RightLine } from "./design/Pricing";
 
 const Pricing = () => {
@@ -26,13 +27,14 @@ const Pricing = () => {
             />
           </div>
         </div> */}
-
-        <Heading title="Certification and Courses" />
-
+        <Heading
+          tag="My Professional Growth Track "
+          title="Certification and Courses"
+        />
         <div className="relative">
           <PricingList />
           <br></br>
-          <PricingList />
+          <PricingList3 />
           <LeftLine />
           <RightLine />
         </div>

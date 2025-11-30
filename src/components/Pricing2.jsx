@@ -27,12 +27,12 @@ const Pricing = () => {
           </div>
         </div> */}
 
-        <Heading title="Tech Stack and Tools" />
+        <Heading tag="How I build ?" title="Tech Stack and Tools" />
 
         <div className="relative">
           <PricingList2 />
-          <LeftLine />
-          <RightLine />
+          {/* <LeftLine />
+          <RightLine /> */}
         </div>
 
         {/* <div className="flex justify-center mt-10">

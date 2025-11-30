@@ -98,7 +98,7 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
+    title: "Project 1: Resume Roaster",
     text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
     date: "May 2023",
     status: "done",
@@ -107,15 +107,15 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Gamification",
+    title: "Project 2: CNN Classifier",
     text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
     date: "May 2023",
-    status: "progress",
+    status: "done",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
+    title: "Project 3: DevOps Automation",
     text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
     date: "May 2023",
     status: "done",
@@ -123,10 +123,10 @@ export const roadmap = [
   },
   {
     id: "3",
-    title: "Integration with APIs",
+    title: "Project 4: Three Tier on AWS  ",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
     date: "May 2023",
-    status: "progress",
+    status: "done",
     imageUrl: roadmap4,
   },
 ];
@@ -234,13 +234,88 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Applied Machine Learning in Python",
+    title: "Microsoft Certified Azure Fundamentals",
     description: "",
     price: null,
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
       "Ability to explore the app and its features without any cost",
+    ],
+  },
+];
+
+export const pricing2 = [
+  {
+    id: "0",
+    title: "Web Development Bootcamp",
+    description: "",
+    price: "0",
+    features: [
+      "An AI chatbot that can understand your queries",
+      "Personalized recommendations based on your preferences",
+      "Ability to explore the app and its features without any cost",
+    ],
+  },
+  {
+    id: "1",
+    title: "Fundamentals of AI and Machine Learning",
+    description: "",
+    price: "9.99",
+    features: [
+      "An advanced AI chatbot that can understand complex queries",
+      "An analytics dashboard to track your conversations",
+      "Priority support to solve issues quickly",
+    ],
+  },
+  {
+    id: "1",
+    title: "Applied Machine Learning in Python ",
+    description: "",
+    price: "9.99",
+    features: [
+      "An advanced AI chatbot that can understand complex queries",
+      "An analytics dashboard to track your conversations",
+      "Priority support to solve issues quickly",
+    ],
+  },
+];
+
+export const pricing3 = [
+  {
+    id: "0",
+    title: "Frontend Development",
+    description: "",
+    price: "0",
+    features: [
+      "Next.js & React: Building performant, server-rendered applications.",
+      "TypeScript: Ensuring type safety and scalable codebases.",
+      "Tailwind CSS: Rapid UI development with responsive design.",
+      "State Management: Handling complex UI states efficiently.",
+    ],
+  },
+  {
+    id: "1",
+    title: "Backend Development",
+    description: "",
+    price: "9.99",
+    features: [
+      "Node.js & Express: Architecting scalable RESTful APIs.",
+      "PostgreSQL & MongoDB: Managing relational and NoSQL data structures.",
+      "Prisma ORM: Type-safe database access and schema management.",
+      "Redis: Implementing caching for high-performance data retrieval.",
+    ],
+  },
+  {
+    id: "2",
+    title: "Deployment and DevOps",
+    description: "",
+    price: null,
+    features: [
+      "AWS Services: Leveraging AWS for cloud infrastructure.",
+      "Docker: Containerizing applications for consistent environments.",
+      "Kubernetes: Orchestrating containers for scalability (Learning/Using).",
+      "Jenkins / CI/CD: Automating build and deployment pipelines.",
     ],
   },
 ];

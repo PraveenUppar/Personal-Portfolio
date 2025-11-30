@@ -10,6 +10,7 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl justify-center"
+          tag="Get in touch"
           title="Let's Connect!"
         />
 
