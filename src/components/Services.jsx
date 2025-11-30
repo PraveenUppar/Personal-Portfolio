@@ -60,8 +60,7 @@ const Services = () => {
                 <p className="body-2 mb-[3rem] text-n-3">
                   I had an amazing experience participating in Hacktoberfest
                   2024 and GirlScript Summer of Code 2024. Making meaningful
-                  pull requests while working on both the front end and back
-                  end.
+                  pull requests while working on both the frontend and backend.
                 </p>
               </div>
 

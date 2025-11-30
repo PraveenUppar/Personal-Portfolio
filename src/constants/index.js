@@ -126,7 +126,7 @@ export const roadmap = [
     title: "Project 4: Three Tier on AWS  ",
     text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
     date: "May 2023",
-    status: "done",
+    status: "done ",
     imageUrl: roadmap4,
   },
 ];
