@@ -35,8 +35,8 @@ const Pricing = () => {
           <PricingList />
           <br></br>
           <PricingList3 />
-          <LeftLine />
-          <RightLine />
+          {/* <LeftLine />
+          <RightLine /> */}
         </div>
 
         {/* <div className="flex justify-center mt-10">

@@ -36,10 +36,6 @@ import {
   // yourlogo,
 } from "../assets";
 
-import aws1 from "../assets/hero/aws1.png";
-import aws2 from "../assets/hero/aws2.webp";
-import azure1 from "../assets/hero/azure1.webp";
-
 export const navigation = [
   {
     id: "0",
@@ -112,6 +108,7 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap2,
+    colorful: true,
   },
   {
     id: "2",
@@ -120,6 +117,7 @@ export const roadmap = [
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
+    colorful: true,
   },
   {
     id: "3",
@@ -128,6 +126,16 @@ export const roadmap = [
     date: "May 2023",
     status: "done ",
     imageUrl: roadmap4,
+    colorful: true,
+  },
+  {
+    id: "4",
+    title: "Project 5: Storage Analyzer ",
+    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+    date: "May 2023",
+    status: "done ",
+    imageUrl: roadmap4,
+    colorful: true,
   },
 ];
 
@@ -209,12 +217,53 @@ export const collabApps = [
   },
 ];
 
+// export const pricing = [
+//   {
+//     id: "0",
+//     title: "AWS Certified Cloud Practitioner",
+//     description: "",
+//     price: "0",
+//     features: [
+//       "An AI chatbot that can understand your queries",
+//       "Personalized recommendations based on your preferences",
+//       "Ability to explore the app and its features without any cost",
+//     ],
+//   },
+//   {
+//     id: "1",
+//     title: "AWS Certified Cloud Solutions Architect",
+//     description: "",
+//     price: "9.99",
+//     features: [
+//       "An advanced AI chatbot that can understand complex queries",
+//       "An analytics dashboard to track your conversations",
+//       "Priority support to solve issues quickly",
+//     ],
+//   },
+//   {
+//     id: "2",
+//     title: "Microsoft Certified Azure Fundamentals",
+//     description: "",
+//     price: null,
+//     features: [
+//       "An AI chatbot that can understand your queries",
+//       "Personalized recommendations based on your preferences",
+//       "Ability to explore the app and its features without any cost",
+//     ],
+//   },
+// ];
+
+import aws1 from "../assets/hero/aws1.png";
+import aws2 from "../assets/hero/aws2.webp";
+import azure1 from "../assets/hero/azure1.webp";
+
 export const pricing = [
   {
     id: "0",
     title: "AWS Certified Cloud Practitioner",
     description: "",
     price: "0",
+    iconUrl: aws1,
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
@@ -226,6 +275,7 @@ export const pricing = [
     title: "AWS Certified Cloud Solutions Architect",
     description: "",
     price: "9.99",
+    iconUrl: aws2,
     features: [
       "An advanced AI chatbot that can understand complex queries",
       "An analytics dashboard to track your conversations",
@@ -237,6 +287,7 @@ export const pricing = [
     title: "Microsoft Certified Azure Fundamentals",
     description: "",
     price: null,
+    iconUrl: azure1,
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
@@ -379,36 +430,36 @@ export const benefits2 = [
   {
     id: "0",
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/your-profile", // Add this
-    backgroundUrl: "...", // You can keep or remove this
+    url: "https://www.linkedin.com/in/praveen-uppar-5b0565277/", // Add this
+    // backgroundUrl: "...", // You can keep or remove this
     light: true,
   },
   {
     id: "1",
     title: "Github",
-    url: "https://github.com/your-username", // Add this
-    backgroundUrl: "...",
+    url: "https://github.com/PraveenUppar", // Add this
+    // backgroundUrl: "...",
     light: true,
   },
   {
     id: "2",
     title: "Leetcode",
-    url: "https://leetcode.com/your-username", // Add this
-    backgroundUrl: "...",
+    url: "https://leetcode.com/u/praveenuppar718/", // Add this
+    // backgroundUrl: "...",
     light: true,
   },
   {
     id: "3",
     title: "X",
-    url: "https://leetcode.com/your-username", // Add this
-    backgroundUrl: "...",
+    url: "https://x.com/_PraveenUppar_", // Add this
+    // backgroundUrl: "...",
     light: true,
   },
   {
     id: "4",
-    title: "Discord",
-    url: "https://leetcode.com/your-username", // Add this
-    backgroundUrl: "...",
+    title: "Codefolio",
+    url: "https://codolio.com/profile/pavicodes", // Add this
+    // backgroundUrl: "...",
     light: true,
   },
 ];
