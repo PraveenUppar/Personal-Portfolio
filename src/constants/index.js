@@ -36,41 +36,6 @@ import {
   // yourlogo,
 } from "../assets";
 
-export const navigation = [
-  {
-    id: "0",
-    title: "",
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "",
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "",
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "",
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "",
-    url: "#",
-    onlyMobile: true,
-  },
-  {
-    id: "5",
-    title: "",
-    url: "#",
-    onlyMobile: true,
-  },
-];
-
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
@@ -91,50 +56,47 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-export const roadmap = [
+export const projects = [
   {
     id: "0",
     title: "Project 1: Resume Roaster",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
+    text: "Web application uses AI to provide helpful and humorous feedback on resumes to assist users in improving their CVs",
+    date: "Nov 2025",
+    githubUrl: "https://github.com/PraveenUppar/Resume-Roaster",
     colorful: true,
   },
   {
     id: "1",
     title: "Project 2: CNN Classifier",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap2,
+    text: "Web applications powered by a Convolutional Neural Network (CNN) deep learning model to provide real-time classification of potato plant diseases",
+    date: "Aug 2024",
+    githubUrl:
+      "https://github.com/PraveenUppar/Potato-plant-disease-classification-model-using-CNN",
     colorful: true,
   },
   {
     id: "2",
     title: "Project 3: DevOps Automation",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
+    text: "End-to-end DevOps workflow for a full-stack application, integrating automated CI/CD, security scanning, and container orchestration with Docker and Kubernetes.",
+    date: "Nov 2025",
+    githubUrl: "https://github.com/PraveenUppar/DevOps-E2E-Project",
     colorful: true,
   },
   {
     id: "3",
     title: "Project 4: Three Tier on AWS  ",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "done ",
-    imageUrl: roadmap4,
+    text: "Implementation of a production-grade 3-tier architecture on Amazon Web Services (AWS)",
+    date: "Sep 2024",
+    githubUrl:
+      "https://github.com/PraveenUppar/Production-Grade-3-Tier-Architecture-on-AWS",
     colorful: true,
   },
   {
     id: "4",
     title: "Project 5: Storage Analyzer ",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "done ",
-    imageUrl: roadmap4,
+    text: "Tool designed to help users make informed decisions about their data center storage strategies.",
+    date: "Mar 2024",
+    githubUrl: "https://github.com/PraveenUppar/Cloud-Acces-Price-Tracker",
     colorful: true,
   },
 ];
@@ -371,60 +333,38 @@ export const pricing3 = [
   },
 ];
 
-export const benefits = [
+export const aboutme = [
   {
     id: "0",
-    title: "Education Info",
-    text: "B.Tech in Computer Science, Vellore Institute of Technology  2023-2027 CGPA: 8.5 ",
+    title: "Education ",
+    text: "B.Tech in Computer Science, VIT University (2023-2027).",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
   },
   {
     id: "1",
     title: "Current Location",
-    text: "Bengaluru, India",
+    text: "Bengaluru, India. Open to on-site internships and remote opportunities worldwide",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
   },
   {
     id: "2",
     title: "Contact Info",
-    text: "Email: praveenuppar718@gmail.com Phone: +91 6360082757",
+    text: "Email: praveenuppar718@gmail.com. Active on LinkedIn & GitHub",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
   },
-  // {
-  //   id: "3",
-  //   title: "Hackathon Wins",
-  //   text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  //   backgroundUrl: "./src/assets/benefits/card-4.svg",
-  //   iconUrl: benefitIcon4,
-  //   imageUrl: benefitImage2,
-  //   light: true,
-  // },
-  // {
-  //   id: "4",
-  //   title: "Certifications",
-  //   text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-  //   backgroundUrl: "./src/assets/benefits/card-5.svg",
-  //   iconUrl: benefitIcon1,
-  //   imageUrl: benefitImage2,
-  // },
-  // {
-  //   id: "5",
-  //   title: "Hobbies",
-  //   text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-  //   backgroundUrl: "./src/assets/benefits/card-6.svg",
-  //   iconUrl: benefitIcon2,
-  //   imageUrl: benefitImage2,
-  // },
+  {
+    id: "3",
+    title: "Hobbies",
+    text: "Exploring Cloud-Native trends, Contributing to Open Source, Strategic Gaming and Tech Blogging.",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
+  },
+  {
+    id: "4",
+    title: "Soft Skills",
+    text: "Team Collaboration, Problem Solving, Communication and Adaptability to new tech stacks.",
+    backgroundUrl: "./src/assets/benefits/card-5.svg",
+  },
 ];
-
-// Inside ../constants/index.js (or wherever benefits2 is defined)
 
 export const benefits2 = [
   {
