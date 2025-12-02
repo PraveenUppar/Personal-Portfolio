@@ -366,73 +366,31 @@ export const aboutme = [
   },
 ];
 
-export const benefits2 = [
+export const socials = [
   {
     id: "0",
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/praveen-uppar-5b0565277/", // Add this
-    // backgroundUrl: "...", // You can keep or remove this
+    url: "https://www.linkedin.com/in/praveen-uppar-5b0565277/",
     light: true,
   },
   {
     id: "1",
     title: "Github",
-    url: "https://github.com/PraveenUppar", // Add this
+    url: "https://github.com/PraveenUppar",
     // backgroundUrl: "...",
     light: true,
   },
-  {
-    id: "2",
-    title: "Leetcode",
-    url: "https://leetcode.com/u/praveenuppar718/", // Add this
-    // backgroundUrl: "...",
-    light: true,
-  },
+
   {
     id: "3",
     title: "X",
-    url: "https://x.com/_PraveenUppar_", // Add this
-    // backgroundUrl: "...",
+    url: "https://x.com/_PraveenUppar_",
     light: true,
   },
   {
     id: "4",
     title: "Codefolio",
-    url: "https://codolio.com/profile/pavicodes", // Add this
-    // backgroundUrl: "...",
+    url: "https://codolio.com/profile/pavicodes",
     light: true,
-  },
-];
-
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
   },
 ];

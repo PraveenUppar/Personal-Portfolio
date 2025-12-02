@@ -1,10 +1,9 @@
-import { benefits2 } from "../constants";
+import { socials } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import Arrow from "../assets/svg/Arrow"; // Assuming you have this
 import { GradientLight } from "./design/Benefits";
 
-const Benefits = () => {
+const Socials = () => {
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -16,7 +15,7 @@ const Benefits = () => {
 
         {/* Changed gap and alignment */}
         <div className="flex flex-wrap gap-6 mb-10 justify-center">
-          {benefits2.map((item) => (
+          {socials.map((item) => (
             <a
               key={item.id}
               href={item.url}
@@ -31,17 +30,6 @@ const Benefits = () => {
                   {item.title}
                 </h5>
 
-                {/* Call to Action Text */}
-                {/* <p className="body-2 text-n-3 text-sm mb-6 relative z-10">
-                  View Profile
-                </p> */}
-
-                {/* Arrow Icon that lights up on hover */}
-                {/* <div className="flex items-center justify-center w-12 h-12 bg-n-7 rounded-full group-hover:bg-n-6 transition-colors z-10">
-                  <Arrow />
-                </div> */}
-
-                {/* Light Effect from original design */}
                 {item.light && <GradientLight />}
               </div>
             </a>
@@ -52,4 +40,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default Socials;
