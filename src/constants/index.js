@@ -1,60 +1,4 @@
-import {
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  chromecast,
-  disc02,
-  discord,
-  discordBlack,
-  facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
-  recording01,
-  recording03,
-  roadmap1,
-  roadmap2,
-  roadmap3,
-  roadmap4,
-  searchMd,
-  slack,
-  sliders04,
-  telegram,
-  twitter,
-  // yourlogo,
-} from "../assets";
-
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-
-export const notificationImages = [notification4, notification3, notification2];
-
 export const companyLogos = [aws1, aws2, azure1];
-
-export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
-];
-
-export const brainwaveServicesIcons = [
-  recording03,
-  recording01,
-  disc02,
-  chromecast,
-  sliders04,
-];
 
 export const projects = [
   {
@@ -100,120 +44,6 @@ export const projects = [
     colorful: true,
   },
 ];
-
-export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
-
-export const collabContent = [
-  {
-    id: "0",
-    title: "Seamless Integration",
-    text: collabText,
-  },
-  {
-    id: "1",
-    title: "Smart Automation",
-  },
-  {
-    id: "2",
-    title: "Top-notch Security",
-  },
-];
-
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: figma,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: notion,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: discord,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: slack,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "Photoshop",
-    icon: photoshop,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: protopie,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: framer,
-    width: 26,
-    height: 34,
-  },
-  {
-    id: "7",
-    title: "Raindrop",
-    icon: raindrop,
-    width: 38,
-    height: 32,
-  },
-];
-
-// export const pricing = [
-//   {
-//     id: "0",
-//     title: "AWS Certified Cloud Practitioner",
-//     description: "",
-//     price: "0",
-//     features: [
-//       "An AI chatbot that can understand your queries",
-//       "Personalized recommendations based on your preferences",
-//       "Ability to explore the app and its features without any cost",
-//     ],
-//   },
-//   {
-//     id: "1",
-//     title: "AWS Certified Cloud Solutions Architect",
-//     description: "",
-//     price: "9.99",
-//     features: [
-//       "An advanced AI chatbot that can understand complex queries",
-//       "An analytics dashboard to track your conversations",
-//       "Priority support to solve issues quickly",
-//     ],
-//   },
-//   {
-//     id: "2",
-//     title: "Microsoft Certified Azure Fundamentals",
-//     description: "",
-//     price: null,
-//     features: [
-//       "An AI chatbot that can understand your queries",
-//       "Personalized recommendations based on your preferences",
-//       "Ability to explore the app and its features without any cost",
-//     ],
-//   },
-// ];
 
 import aws1 from "../assets/hero/aws1.png";
 import aws2 from "../assets/hero/aws2.webp";
@@ -292,36 +122,42 @@ export const techstack = [
   },
 ];
 
+import card from "../assets/benefits/card-1.svg";
+import card2 from "../assets/benefits/card-2.svg";
+import card3 from "../assets/benefits/card-3.svg";
+import card4 from "../assets/benefits/card-4.svg";
+import card5 from "../assets/benefits/card-5.svg";
+
 export const aboutme = [
   {
     id: "0",
     title: "Education ",
     text: "B.Tech in Computer Science, VIT University (2023-2027).",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    backgroundUrl: card,
   },
   {
     id: "1",
     title: "Current Location",
     text: "Bengaluru, India. Open to on-site internships and remote opportunities worldwide",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: card2,
   },
   {
     id: "2",
     title: "Contact Info",
     text: "Email: praveenuppar718@gmail.com. Active on LinkedIn & GitHub",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: card3,
   },
   {
     id: "3",
     title: "Interests",
     text: "Exploring Cloud-Native trends, Contributing to Open Source, Strategic Gaming and Tech Blogging.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: card4,
   },
   {
     id: "4",
     title: "Soft Skills",
     text: "Team Collaboration, Problem Solving, Communication and Adaptability to new tech stacks.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    backgroundUrl: card5,
   },
 ];
 
