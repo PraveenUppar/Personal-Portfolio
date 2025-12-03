@@ -1,15 +1,9 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
-import {
-  PhotoChatMessage,
-  Gradient,
-  VideoBar,
-  VideoChatMessage,
-} from "./design/Services";
+import { service1, service2, service3 } from "../assets";
+import { Gradient } from "./design/Services";
 
-const Services = () => {
+const Highlights = () => {
   return (
     <Section id="how-to-use">
       <div className="container">
@@ -17,20 +11,23 @@ const Services = () => {
           title="Highlights of my journey.  "
           text="Some of my notable milestones and achievements"
         />
-
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
+          <div className="relative z-1 flex flex-col lg:flex-row lg:items-center h-auto lg:h-[39rem] mb-5 border border-n-1/10 rounded-3xl overflow-hidden xl:h-[46rem]">
+            {/* IMAGE CONTAINER */}
+            {/* Mobile: Relative height of 20rem. Desktop: Absolute full height */}
+            <div className="relative h-[20rem] w-full shrink-0 lg:absolute lg:top-0 lg:left-0 lg:h-full lg:w-3/5 pointer-events-none xl:w-auto">
               <img
-                className="w-full h-full object-cover md:object-right"
+                className="w-full h-full object-cover lg:object-right"
                 width={800}
-                alt="Smartest AI"
                 height={730}
                 src={service1}
+                alt="Hackbyte Runner Up"
               />
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
+            {/* TEXT CONTAINER */}
+            {/* Mobile: Standard padding. Desktop: ML-Auto to push right */}
+            <div className="relative z-1 px-8 py-10 lg:p-20 max-w-[25rem] lg:max-w-30rem] lg:ml-auto">
               <h4 className="h4 mb-4">HackByte 3.0 Runner Up</h4>
               <p className="body-2 mb-[3rem] text-n-3">
                 Secured 2nd position in the Wikimedia-sponsored track at
@@ -56,11 +53,9 @@ const Services = () => {
                 <p className="body-2 mb-[3rem] text-n-3">
                   I had an amazing experience participating in Hacktoberfest
                   2024 and GirlScript Summer of Code 2024. Making meaningful
-                  pull requests while working on both the frontend and backend.
+                  contributions working on both the frontend and backend.
                 </p>
               </div>
-
-              {/* <PhotoChatMessage /> */}
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
@@ -72,29 +67,6 @@ const Services = () => {
                   features that significantly improved user experience and
                   functionality.
                 </p>
-
-                {/* <ul className="flex items-center justify-between">
-                  {brainwaveServicesIcons.map((item, index) => (
-                    <li
-                      key={index}
-                      className={`rounded-2xl flex items-center justify-center ${
-                        index === 2
-                          ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
-                          : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
-                      }`}
-                    >
-                      <div
-                        className={
-                          index === 2
-                            ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
-                            : ""
-                        }
-                      >
-                        <img src={item} width={24} height={24} alt={item} />
-                      </div>
-                    </li>
-                  ))}
-                </ul> */}
               </div>
 
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
@@ -105,9 +77,6 @@ const Services = () => {
                   height={400}
                   alt="Scary robot"
                 />
-
-                {/* <VideoChatMessage /> */}
-                {/* <VideoBar /> */}
               </div>
             </div>
           </div>
@@ -119,4 +88,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Highlights;

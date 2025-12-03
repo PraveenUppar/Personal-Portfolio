@@ -219,87 +219,50 @@ import aws1 from "../assets/hero/aws1.png";
 import aws2 from "../assets/hero/aws2.webp";
 import azure1 from "../assets/hero/azure1.webp";
 
-export const pricing = [
+export const cloudcert = [
   {
     id: "0",
     title: "AWS Certified Cloud Practitioner",
-    description: "",
-    price: "0",
     iconUrl: aws1,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
   },
   {
     id: "1",
     title: "AWS Certified Cloud Solutions Architect",
-    description: "",
-    price: "9.99",
     iconUrl: aws2,
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
   },
   {
     id: "2",
     title: "Microsoft Certified Azure Fundamentals",
-    description: "",
-    price: null,
     iconUrl: azure1,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
   },
 ];
 
-export const pricing2 = [
+import ml from "../assets/ml.png";
+import web from "../assets/web.png";
+import Nptel from "../assets/Nptel.jpg";
+
+export const courses = [
   {
     id: "0",
     title: "Web Development Bootcamp",
-    description: "",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Fundamentals of AI and Machine Learning",
-    description: "",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
+    iconUrl: web,
   },
   {
     id: "1",
     title: "Applied Machine Learning in Python ",
-    description: "",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
+    iconUrl: ml,
+  },
+  {
+    id: "2",
+    title: "NPTEL Course on Internet of Things",
+    iconUrl: Nptel,
   },
 ];
 
-export const pricing3 = [
+export const techstack = [
   {
     id: "0",
     title: "Frontend Development",
-    description: "",
-    price: "0",
     features: [
       "Next.js & React: Building performant, server-rendered applications.",
       "TypeScript: Ensuring type safety and scalable codebases.",
@@ -310,8 +273,6 @@ export const pricing3 = [
   {
     id: "1",
     title: "Backend Development",
-    description: "",
-    price: "9.99",
     features: [
       "Node.js & Express: Architecting scalable RESTful APIs.",
       "PostgreSQL & MongoDB: Managing relational and NoSQL data structures.",
@@ -322,8 +283,6 @@ export const pricing3 = [
   {
     id: "2",
     title: "Deployment and DevOps",
-    description: "",
-    price: null,
     features: [
       "AWS Services: Leveraging AWS for cloud infrastructure.",
       "Docker: Containerizing applications for consistent environments.",
@@ -354,7 +313,7 @@ export const aboutme = [
   },
   {
     id: "3",
-    title: "Hobbies",
+    title: "Interests",
     text: "Exploring Cloud-Native trends, Contributing to Open Source, Strategic Gaming and Tech Blogging.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
   },

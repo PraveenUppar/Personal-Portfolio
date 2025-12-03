@@ -4,10 +4,10 @@ import Socials from "./components/Socials";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
-import Pricing2 from "./components/Pricing2";
+import Certification from "./components/Certification";
+import Techstack from "./components/Techstack";
 import Projects from "./components/Projects";
-import Services from "./components/Services";
+import Hightlights from "./components/Highlights";
 
 const App = () => {
   return (
@@ -17,9 +17,9 @@ const App = () => {
         <Hero />
         <Aboutme />
         <Projects />
-        <Services />
-        <Pricing2 />
-        <Pricing />
+        <Hightlights />
+        <Techstack />
+        <Certification />
         <Socials />
         <Footer />
       </div>
