@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   Design tokens — the single source of truth.
+
+   Never write a raw hex or a fixed px font-size in a component.
+   Raw values live in :root so they can be swapped at runtime;
+   @theme inline maps them to utilities that read the variable
+   rather than copying its value, which is what makes the theme
+   toggle work:  --surface → bg-surface / border-surface
+   ───────────────────────────────────────────────────────────── */
+
+/* Dark is the default — the design was drawn for it. */
+:root {
+  --bg: #000000;
+  --surface: #131316;
+  --surface-hover: #17171b;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --ink: #fafafa;
+  --muted: #a1a1aa;
+  --faint: #71717a;
+  --accent: #818cf8;
+  --accent-soft: #a5b4fc;
+  --accent-dim: rgb(129 140 248 / 0.16);
+  --thumb-mat: #ffffff;
+  --grid: rgb(129 140 248 / 0.11);
+  --grid-glow: rgb(129 140 248 / 0.11);
+}
+
+:root[data-theme="light"] {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --surface-hover: #f4f4f5;
+  --line: #e4e4e7;
+  --line-strong: #d4d4d8;
+  --ink: #18181b;
+  --muted: #52525b;
+  --faint: #71717a;
+  --accent: #4f46e5;
+  --accent-soft: #6366f1;
+  --accent-dim: rgb(79 70 229 / 0.14);
+  --thumb-mat: #f4f4f5;
+  --grid: rgb(79 70 229 / 0.1);
+  --grid-glow: rgb(79 70 229 / 0.07);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-dim: var(--accent-dim);
+  --color-thumb-mat: var(--thumb-mat);
+
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+  --font-mono:
+    var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Type scale — clamp-based so every size is fluid by default. */
+  --text-display: clamp(2.15rem, 6vw, 3rem);
+  --text-section: clamp(1.35rem, 3vw, 1.7rem);
+  --text-h2: clamp(1.25rem, 2.4vw, 1.5rem);
+  --text-h3: 1.1rem;
+  --text-body: 1.02rem;
+  --text-sm: 0.95rem;
+  --text-xs: 0.88rem;
+  --text-label: 0.84rem;
+  --text-tag: 0.82rem;
+
+  --radius-card: 12px;
+  --radius-pill: 999px;
+  --radius-chip: 8px;
+  --radius-tag: 6px;
+
+  /* Motion — durations and easing live here so timing stays consistent. */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-base: 250ms;
+  --duration-slow: 550ms;
+}
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    /* Sticky header clearance for in-page anchors. */
+    scroll-padding-top: 5rem;
+    color-scheme: dark;
+  }
+
+  html[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Faint graph-paper ground, drawn only behind the content column so the
+     margins stay plain. Fixed, so it reads as a surface the page sits on
+     rather than something that scrolls along with it. */
+  .grid-band {
+    /* Only the rules are drawn — no wash behind them, so the ground stays the
+       same flat black inside the band as outside it. The glow comes from the
+       accent tint on the lines themselves. */
+    background-image:
+      linear-gradient(to right, var(--grid) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size:
+      42px 42px,
+      42px 42px;
+    /* Fade the band out at its edges instead of ending on a hard seam. */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 12%,
+      #000 82%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 12%,
+      #000 82%,
+      transparent
+    );
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Swapping the palette rewrites custom properties, and elements mid
+     transition on a var-derived colour can keep painting the old value.
+     Transitions are suppressed for the frame the theme flips on. */
+  html[data-theme-switching] *,
+  html[data-theme-switching] *::before,
+  html[data-theme-switching] *::after {
+    transition: none !important;
+  }
+
+  /* Scroll reveal. The hidden state is only ever applied by JS once an
+     observer is confirmed, so content is never stranded invisible. */
+  [data-reveal="pending"] {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  [data-reveal="in"] {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity var(--duration-slow) ease,
+      transform var(--duration-slow) var(--ease-out-soft);
+  }
+
+  /* Nothing animates for anyone who has asked it not to. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
