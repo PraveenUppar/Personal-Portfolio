@@ -16,7 +16,7 @@ export const about = {
   paragraphs: [
     "I'm pursuing my B.Tech in Computer Science at VIT Bhopal, currently in my final year with a CGPA of 8.75. My interest is backend development and distributed systems — how large-scale applications actually work behind the scenes, and how to build things that stay reliable as they grow.",
     "I recently completed a Full Stack SDE internship at Advan Drive Technology, where I worked on workflow automation modules, developed REST APIs, and helped deploy containerized microservices on Oracle Cloud Infrastructure. That gave me exposure to the full software development lifecycle, from understanding requirements through to implementation and deployment.",
-    "Outside the internship I built Zenith, a container-based deployment platform that automates application deployment using Docker, Redis and AWS. I'm looking for opportunities to contribute to challenging engineering problems while continuing to grow as a software engineer.",
+    "I'm looking for opportunities to contribute to challenging engineering problems while continuing to grow as a software engineer.",
   ],
   nowLabel: "Currently working on",
   now: [
@@ -43,9 +43,8 @@ export const experience: ExperienceItem[] = [
     location: "New Delhi · Remote",
     period: "Feb — Apr 2026",
     points: [
-      "Built and scaled 5+ workflow automation modules and 7+ backend REST APIs for a CA operations platform, streamlining automated financial reporting.",
-      "Architected and managed distributed, containerized infrastructure on Oracle Cloud Infrastructure (OCI), orchestrating 4 microservices with asynchronous job execution and real-time progress tracking.",
-      "Owned end-to-end delivery across the SDLC — system design, implementation, testing and deployment — for a live CA operations platform.",
+      "Shipped 20+ schedule entry modules and 5+ financial reports (Balance Sheet, P&L, Cash Flow, Notes toAccounts, Ratio Analysis) with Excel generation engine producing audit ready statements.",
+      "Containerized and deployed the application to OCI into 4 Docker services behind an Nginx reverse proxy, with development and production configurations.",
     ],
     tags: [
       "Next.js 16",
@@ -97,28 +96,39 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Co-Host",
-    tagline: "Tech events ticketing platform",
-    period: "Jan 2026",
+    name: "Eco Loop",
+    tagline: "Closed-Loop LLM Building Control",
+    period: "July 2026",
     points: [
-      "Built and integrated 5+ core backend workflows — payment verification, ticket generation, QR validation, coupon redemption and email notifications — enabling secure and reliable transaction processing.",
-      "Designed a three-layer concurrency control architecture combining idempotency checks, database transactions and atomic operations, ensuring consistent inventory management under high-concurrency workloads.",
-      "Implemented pull-based Stripe payment verification without webhooks, preventing URL spoofing by validating session status server-side before order fulfilment.",
+      "Built a closed loop control system where a local 3B LLM (qwen2.5:3b-instruct) supervises a live EnergyPlus simulation, reading sensors and writing thermostat setpoints mid-run through a 5 tool MCP server.",
+      "Cut HVAC electricity by 11.5% with 0% comfort violations across a 3 week Chicago TMY3 run on a 5 zone VAV office, beating a rule-based controller by 1.05 pp while also reducing peak demand 3.7%.",
+      "Designed a supervisory architecture, LLM sets policy every 4 simulated hours, a deterministic inner loop applies and guards it every 15 min timestep avoiding the 90 min of added latency for per-timestep inference.",
     ],
     tags: ["Stripe", "Concurrency", "PostgreSQL", "Node.js"],
-    codeUrl: "https://github.com/PraveenUppar",
+    codeUrl: "https://github.com/PraveenUppar/Eco-Loop-Build-Agent",
   },
   {
     name: "Zenith",
-    tagline: "Container-based deployment system",
+    tagline: "Deployment as a Service",
     period: "Dec 2025",
     points: [
-      "Architected a distributed deployment platform with 3 microservices in a monorepo, automating repository cloning and isolated Docker container builds from a single GitHub URL.",
-      "Engineered an asynchronous build pipeline using a Redis-backed job queue for reliable, decoupled task processing across services.",
-      "Implemented AWS S3 artifact storage and a custom request-routing layer supporting scalable static asset delivery, SPA fallback routing and per-project subdomain hosting.",
+      "Architected a distributed deployment platform as 3 decoupled microservices in an npm-workspaces monorepo, automating repository cloning, dependency installation, and build execution in a containerized worker from a GitHub URL - mimicking Vercel functionality.",
+      "Engineered an asynchronous build pipeline on a Redis job queue, decoupling API response time from multi-minute npm builds and enabling build workers to scale horizontally.",
+      "Implemented AWS S3 artifact storage and a stateless custom routing layer mapping subdomains to S3 prefixes, with streamed responses and SPA fallback routing.",
     ],
     tags: ["Docker", "Redis", "AWS S3", "Microservices"],
-    codeUrl: "https://github.com/PraveenUppar",
+    codeUrl: "https://github.com/PraveenUppar/Zenith",
+  },
+  {
+    name: "AWS",
+    tagline: "Multi-Tier Infrastructure System",
+    period: "Sep 2025",
+    points: [
+      "Architected and provisioned a 3-tier architecture on AWS using 7+ services deployed across 2 Availability Zones with VPC networking, NAT gateways, Security Groups, managed RDS, Application Load Balancers, Auto Scaling policies, and CloudWatch monitoring.",
+    ],
+    tags: ["AWS"],
+    codeUrl:
+      "https://github.com/PraveenUppar/AWS-Multi-Tier-Infrastructure-Design",
   },
 ];
 
@@ -250,7 +260,7 @@ export const education: EducationItem[] = [
 export const contact = {
   email: "praveenuppar718@gmail.com",
   blurb:
-    "Always happy to talk about backend engineering, internships or collaboration. The fastest way to reach me is below.",
+    "Always happy to talk about engineering, internships or collaboration. The fastest way to reach me is below.",
   links: [
     { label: "Email", href: "mailto:praveenuppar718@gmail.com" },
     { label: "GitHub", href: "https://github.com/PraveenUppar" },
